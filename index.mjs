@@ -44,7 +44,7 @@ const CATS = [
 ];
 
 const server = http.createServer((req, res) => {
-  res.writeHead(200, { "Content-Type": "text/plain" });
+  res.writeHead(200, { "Content-Type": "text/plain; charset=utf-8" });
   res.write(CATS[Math.floor(Math.random() * CATS.length)]);
   res.end("\n\nReach me by hi <at this domain> (PGP 0xEDAF57CA46025B35)");
 });
